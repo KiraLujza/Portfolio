@@ -7,67 +7,82 @@
 
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="my-logo">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24" cy="24" r="22" fill="#222" stroke="#fff" stroke-width="2"/>
-                <text x="50%" y="56%" text-anchor="middle" fill="#fff"
-                    font-size="18" font-family="Segoe UI, Arial, sans-serif"
-                    font-weight="bold" dominant-baseline="middle">
-                    KLK
-                </text>
-            </svg>
-        </div>
+<!-- Top Navigation (mobile only) -->
+<div class="topnav">
+    <div class="topnav-logo">KLK</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="AboutMe.html">About me</a>
+    </nav>
+</div>
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="AboutMe.html">About me</a></li>
-            </ul>
-        </nav>
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="my-logo">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="22" fill="#222" stroke="#fff" stroke-width="2"/>
+            <text x="50%" y="56%" text-anchor="middle" fill="#fff"
+                font-size="18" font-family="Segoe UI, Arial, sans-serif"
+                font-weight="bold" dominant-baseline="middle">
+                KLK
+            </text>
+        </svg>
     </div>
 
-    <!-- Lightbox -->
-    <div id="lightbox-overlay" style="display:none;">
-        <span id="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" alt="Popup Image">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="AboutMe.html">About me</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox-overlay">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Popup Image">
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+    <section class="intro-note">
+    <p>A small collection of moments I like.</p>
+</section>
+    <div class="gallery-masonry">
+
+        <img src="pitures/DSC_0710.jpg" class="gallery-slightly-bigger" alt="">
+        <img src="pitures/DSC_0063.jpg" alt="">
+        <img src="pitures/DSC_0080.jpg" alt="">
+        <img src="pitures/DSC_0345.jpg" alt="">
+        <img src="pitures/DSC_0280.JPG" alt="">
+        <img src="pitures/DSC_0302.jpg" alt="">
+        <img src="pitures/DSC_0349.jpg" alt="">
+        <img src="pitures/DSC_0350.jpg" alt="">
+        <img src="pitures/DSC_0458.JPG" alt="">
+        <img src="pitures/Mikey.jpg" alt="">
+        <img src="pitures/DSC_0581.JPG" alt="">
+        <img src="pitures/DSC_0613.JPG" alt="">
+        <img src="pitures/DSC_0413.jpg" alt="">
+        <img src="pitures/DSC_0784.JPG" alt="">
+        <img src="pitures/DSC_0407.jpg" alt="">
+        <img src="pitures/DSC_0840.JPG" alt="">
+        <img src="pitures/Statue.png" alt="">
+        <img src="pitures/DSC_0038.jpg" alt="">
+        <img src="pitures/DSC_0051.jpg" alt="">
+
     </div>
+</div>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="gallery-masonry">
-
-            <img src="pitures/DSC_0710.jpg" class="gallery-slightly-bigger" alt="Portfolio Image 1">
-            <img src="pitures/DSC_0063.jpg" alt="Portfolio Image 2">
-            <img src="pitures/DSC_0080.jpg" alt="Portfolio Image 3">
-            <img src="pitures/DSC_0345.jpg" alt="Portfolio Image 4">
-            <img src="pitures/DSC_0280.JPG" alt="Portfolio Image 5">
-            <img src="pitures/DSC_0302.jpg" alt="Portfolio Image 6">
-            <img src="pitures/DSC_0349.jpg" alt="Portfolio Image 7">
-            <img src="pitures/DSC_0350.jpg" alt="Portfolio Image 8">
-            <img src="pitures/DSC_0458.JPG" alt="Portfolio Image 9">
-            <img src="pitures/Mikey.jpg" alt="Portfolio Image 10">
-            <img src="pitures/DSC_0581.JPG" alt="Portfolio Image 11">
-            <img src="pitures/DSC_0613.JPG" alt="Portfolio Image 12">
-            <img src="pitures/DSC_0413.jpg" alt="Portfolio Image 13">
-            <img src="pitures/DSC_0784.JPG" alt="Portfolio Image 14">
-            <img src="pitures/DSC_0407.jpg" alt="Portfolio Image 15">
-            <img src="pitures/DSC_0840.JPG" alt="Portfolio Image 16">
-            <img src="pitures/Statue.png" alt="Portfolio Image 17">
-            <img src="pitures/DSC_0038.jpg" alt="Portfolio Image 18">
-            <img src="pitures/DSC_0051.jpg" alt="Portfolio Image 19">
-
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="lightbox.js"></script>
-
-
+<script src="lightbox.js"></script>
 </body>
+<footer class="footer">
+    <p>© 2026 Kira Lujza Kiss</p>
+    <p>Designed & built with caffeine and questionable sleep habits.</p>
+    <p class="footer-credit">All photos taken by me.</p>
+</footer>
 </html>

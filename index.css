@@ -1,9 +1,13 @@
 html, body {
     height: 100%;
     margin: 0;
-    background: linear-gradient(to bottom, #111, #181818);
+     background: linear-gradient(to bottom, #514f4f, #000000);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
     font-family: 'Inter', sans-serif;
     color: #fff;
+     min-height: 100%;
+     overflow-x: hidden;
 }
 
 /* ===== TOP NAV ===== */
@@ -38,47 +42,34 @@ html, body {
     opacity: 1;
 }
 
-/* Add / replace this */
-
-.topnav-logo {
-    position: absolute;
-    left: 18px;
-    font-weight: bold;
-    color: #fff;
-
-    width: 38px;
-    height: 38px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 0.9rem;
-    line-height: 1;
-}
-
 /* ===== SIDEBAR ===== */
 .sidebar {
-    width: 115px;
-    background: #111;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    padding: 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-right: 1px solid rgba(255,255,255,0.05);
+  width: 115px;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  border-right: 1px solid rgba(89, 84, 84, 0.05);
 }
 
-.my-logo {
-    margin-bottom: 36px;
+/* ✅ FIXED LOGO */
+.logo {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
 }
 
-.my-logo svg:hover {
+.logo svg:hover {
  transform: rotate(6deg) scale(1.05);
  transition:.3s;
 }
@@ -114,10 +105,9 @@ html, body {
 }
 
 .intro-note p {
-    align-self: center;
     margin: 0;
     font-size: 0.95rem;
-    color: rgba(255,255,255,0.6);
+    color: rgba(2, 2, 2, 0.6);
     letter-spacing: 0.2px;
     max-width: 500px;
 }
@@ -179,7 +169,7 @@ html, body {
     padding: 35px 20px;
     text-align: center;
     background: #111;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
     color: rgba(66, 56, 56, 0.7);
     font-size: 0.95rem;
     line-height: 1.8;
@@ -224,19 +214,20 @@ html, body {
     }
 
     .topnav {
-    display: flex;
-    width: 100%;
-    background: #111;
-    padding: 20px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  }
-   .topnav-logo {
+        display: flex;
+        width: 100%;
+        background: #111;
+        padding: 20px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+.topnav-logo {
     position: absolute;
     left: 18px;
     font-weight: bold;
@@ -262,33 +253,18 @@ html, body {
         justify-content: center;
     }
 
-     .topnav nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    opacity: 0.8;
-    transition: opacity 0.2s;
-  }
+    .topnav nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        opacity: 0.8;
+        transition: opacity 0.2s;
+    }
 
-  .topnav nav a:hover{
-    color:#9b5cff;
-    opacity: 1;
-  }
-
-  .intro-note {
-    margin-left: 50px;
-    padding: 20px 24px 0;
-    align-items: center;
-}
-
-.intro-note p {
-    align-self: center;
-    margin: 0;
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 0.2px;
-    max-width: 500px;
-}
+    .topnav nav a:hover{
+        color:#9b5cff;
+        opacity: 1;
+    }
 
     .main-content {
         margin-left: 0;

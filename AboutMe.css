@@ -1,10 +1,14 @@
 /* Base */
 html, body {
- background: linear-gradient(to bottom, #111, #181818);
- font-family: 'Inter', sans-serif;
-  color: #fff;
-  margin: 0;
-  overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+     background: linear-gradient(to bottom, #514f4f, #000000);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+     min-height: 100%;
+     overflow-x: hidden;
 }
 
 
@@ -23,10 +27,10 @@ html, body {
   left: 0;
   top: 0;
   z-index: 10;
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(89, 84, 84, 0.05);
 }
 
-.my-logo {
+.logo {
   width: 48px;
   height: 48px;
   display: flex;
@@ -35,7 +39,7 @@ html, body {
   margin-bottom: 36px;
 }
 
-.my-logo svg:hover {
+.logo svg:hover {
  transform: rotate(6deg) scale(1.05);
  transition:.3s;
 }
@@ -169,7 +173,7 @@ html, body {
     padding: 35px 20px;
     text-align: center;
     background: #111;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
     color: rgba(66, 56, 56, 0.7);
     font-size: 0.95rem;
     line-height: 1.8;
@@ -182,6 +186,13 @@ html, body {
 .footer p:first-child {
     color: #fff;
     font-weight: 600;
+}
+
+.footer-credit {
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgba(66, 56, 56, 0.7);
+    letter-spacing: 0.3px;
 }
 
 /* Responsive */

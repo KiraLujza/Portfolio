@@ -12,7 +12,7 @@
 
 <body>
 
-<!-- Top Navigation (mobile only) -->
+<!-- Top Navigation -->
 <div class="topnav">
     <div class="topnav-logo">KLK</div>
     <nav>
@@ -24,11 +24,11 @@
 <!-- Sidebar -->
 <div class="sidebar">
     <div class="my-logo">
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="48" height="48" viewBox="0 0 48 48">
             <circle cx="24" cy="24" r="22" fill="#222" stroke="#fff" stroke-width="2"/>
             <text x="50%" y="56%" text-anchor="middle" fill="#fff"
-                font-size="18" font-family="Segoe UI, Arial, sans-serif"
-                font-weight="bold" dominant-baseline="middle">
+                font-size="18" font-family="Segoe UI"
+                font-weight="bold">
                 KLK
             </text>
         </svg>
@@ -45,44 +45,29 @@
 <!-- Lightbox -->
 <div id="lightbox-overlay">
     <span id="lightbox-close">&times;</span>
-    <img id="lightbox-img" src="" alt="Popup Image">
+    <img id="lightbox-img" src="" alt="">
 </div>
 
 <!-- Main Content -->
 <div class="main-content">
+
     <section class="intro-note">
-    <p>A small collection of moments I like.</p>
-</section>
-    <div class="gallery-masonry">
+        <p>A small collection of moments I like.</p>
+    </section>
 
-        <img src="pitures/DSC_0710.jpg" class="gallery-slightly-bigger" alt="">
-        <img src="pitures/DSC_0063.jpg" alt="">
-        <img src="pitures/DSC_0080.jpg" alt="">
-        <img src="pitures/DSC_0345.jpg" alt="">
-        <img src="pitures/DSC_0280.JPG" alt="">
-        <img src="pitures/DSC_0302.jpg" alt="">
-        <img src="pitures/DSC_0349.jpg" alt="">
-        <img src="pitures/DSC_0350.jpg" alt="">
-        <img src="pitures/DSC_0458.JPG" alt="">
-        <img src="pitures/Mikey.jpg" alt="">
-        <img src="pitures/DSC_0581.JPG" alt="">
-        <img src="pitures/DSC_0613.JPG" alt="">
-        <img src="pitures/DSC_0413.jpg" alt="">
-        <img src="pitures/DSC_0784.JPG" alt="">
-        <img src="pitures/DSC_0407.jpg" alt="">
-        <img src="pitures/DSC_0840.JPG" alt="">
-        <img src="pitures/Statue.png" alt="">
-        <img src="pitures/DSC_0038.jpg" alt="">
-        <img src="pitures/DSC_0051.jpg" alt="">
+    <!-- JS will fill this -->
+    <div class="gallery-masonry"></div>
 
-    </div>
 </div>
 
-<script src="lightbox.js"></script>
-</body>
 <footer class="footer">
     <p>© 2026 Kira Lujza Kiss</p>
     <p>Designed & built with caffeine and questionable sleep habits.</p>
     <p class="footer-credit">All photos taken by me.</p>
 </footer>
+
+<script src="Pictures.js"></script>
+<script src="lightbox.js"></script>
+
+</body>
 </html>
